@@ -1,13 +1,22 @@
-var myBall = new Ball(100, 100);
-myBall.speed.x = 2;
-myBall.speed.y = 2;
+var bubblepit = [];
 
 setup = function () {
   createCanvas(600, 400);
+  iterateWithForLoop(500);
 };
 
 draw = function () {
   background(100);
-  myBall.update();
-  myBall.display();
+
+  bubblepit.forEach(function updateAndDisplay(bubble) {
+    bubble.display();
+    bubble.update();
+  });
+};
+
+var iterateWithForLoop = function (numberOfBubbles) {
+  for (var i = 0; i < numberOfBubbles; ++i) {
+    bubblepit.push (new Bubble (random(0, width-10), random(10, height - 10)));
+  
+  }
 };
