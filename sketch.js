@@ -1,6 +1,6 @@
-var myBall = new Ball(100, 100);
-myBall.speed.x = 2;
-myBall.speed.y = 2;
+var myBubble = new Bubble(100, 100);
+myBubble.speed.x = 2;
+myBubble.speed.y = 2;
 
 setup = function () {
   createCanvas(600, 400);
@@ -8,6 +8,6 @@ setup = function () {
 
 draw = function () {
   background(100);
-  myBall.update();
-  myBall.display();
+  myBubble.update();
+  myBubble.display();
 };
