@@ -20,26 +20,4 @@ Bubble.prototype = {
     ellipse(this.x, this.y, this.radius * 2, this.radius * 2);
   },
 
-  //bounce: function() {
-    //this.bounceX();
-    //this.bounceY();
-  //},
-
-  //bounceX: function() {
-    //if (this.x + this.radius > width) {
-      //this.speed.x *= -1;
-  //  }
-    //if (this.x - this.radius < 0) {
-      //this.speed.x *= -1;
-//    }
-  //},
-
-  //bounceY: function() {
-  //  if (this.y + this.radius > height) {
-    //  this.speed.y *= -1;
-    //}
-    //if (this.y - this.radius < 0) {
-      //this.speed.y *= -1;
-    //}
-  //}
 };
