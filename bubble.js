@@ -1,8 +1,7 @@
 var Bubble = function(x, y) {
   this.x = x;
   this.y = y;
-
-  //this.speed = {x: 1, y: 1}; // because our speed is represented by an object, we *must* put it in the constructor
+  this.speed = {x: 1, y: 1}; // because our speed is represented by an object, we *must* put it in the constructor
 };
 
 Bubble.prototype = {
