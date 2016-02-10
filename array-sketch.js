@@ -1,8 +1,8 @@
-var ballpit = [];
+var bubblepit = [];
 
-var updateAndDisplay = function(ball) {
-  ball.update();
-  ball.display();
+var updateAndDisplay = function(bubble) {
+  bubble.update();
+  bubble.display();
 };
 
 setup = function() {
@@ -10,11 +10,11 @@ setup = function() {
 };
 
 draw = function () {
-  background(100);
+  background(0);
   //iterateFunctionally(ballpit);
   //iterateWithWhileLoop(ballpit);
-  iterateWithForLoop(ballpit);
-  if (mouseIsPressed) ballpit.push(new Ball(mouseX, mouseY));
+  iterateWithForLoop(bubblepit);
+  if (mouseIsPressed) bubblepit.push(new Bubble(mouseX, mouseY));
 };
 
 var iterateFunctionally = function (array) {
